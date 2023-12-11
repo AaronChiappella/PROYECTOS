@@ -1,0 +1,87 @@
+
+.Main {
+  background-color: rgb(27, 33, 65);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.BoardPrincipal{display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;}
+
+
+  .game {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(66, 79, 138);
+    justify-content: center;
+    padding: 20px; /* Ajusta el espacio interno según tus preferencias */
+    border-radius: 10px; /* Ajusta el radio de la esquina según tus preferencias */
+    align-items: center;
+  }
+  
+  .game-board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Ajusta el margen superior según tus preferencias */
+    
+  }
+
+  
+
+.game-info {
+  width: 75%;
+  text-align: center;
+  margin-top: 20px; /* Ajusta el margen superior según tus preferencias */
+}
+
+
+
+/* Board.css */
+
+.board-row {
+  display: flex;
+}
+
+.board-row button{width: 150px;
+height: 150px;}
+
+/* Board.css */
+
+.square {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  font-size: 60px; /* Ajusta el tamaño de la fuente según tus preferencias */
+
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.square:hover {
+  background-color: #eee;
+}
+
+/* Cambiamos el color de fondo cuando se selecciona */
+.square.selected {
+  background-color: #d4ff00;
+  border-color: #000000; /* Cambiamos el color del borde cuando se selecciona */
+}
+
+.status {
+  margin-top: 10px;
+  font-size: 18px;
+}
